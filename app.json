@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "MGG",
+    "slug": "MGG",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "MGG"
+}
