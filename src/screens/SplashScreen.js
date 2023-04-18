@@ -9,7 +9,7 @@ const SplashScreen = ({ navigation }) => {
 
   useEffect(() => {
     setTimeout(() => {
-      navigation.navigate('AvatarSelection');
+      navigation.navigate('WelcomeAbroad');
     }, 3000);
   }, []);
 
