@@ -1,6 +1,7 @@
 // AvatarSelectionScreen.js
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import { COLORS } from '../utils/constants/color-style';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'react-native';
 
 const avatars = [
   // Import your avatar images here
@@ -21,6 +22,9 @@ const AvatarSelectionScreen = () => {
   return (
     <View style={styles.container}>
       {/* Render avatars and handle avatar selection */}
+      <Image style={styles.image} source={require('../assets/images/aboutyou.png')} />
+      <Image style={styles.image} source={require('../assets/images/enteranickname.png')} />
+      
       {/* Render the nickname input */}
       {/* Render the continue button */}
     </View>
@@ -28,7 +32,12 @@ const AvatarSelectionScreen = () => {
 };
 
 const styles = StyleSheet.create({
-  // Add your styles here
+  container: {
+    backgroundColor: COLORS.black,
+    flex:1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
 });
 
 export default AvatarSelectionScreen;
