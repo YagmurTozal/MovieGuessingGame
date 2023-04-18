@@ -1,7 +1,9 @@
 // SplashScreen.js
 import React, { useEffect } from 'react';
+import { TEXT_STYLES } from '../utils/constants/text-style';
+import { COLORS } from '../utils/constants/color-style';
+
 import { View, Text, StyleSheet,Animated } from 'react-native';
-import { startTransition } from 'react/cjs/react.production.min';
 
 const SplashScreen = ({ navigation }) => {
 
@@ -13,7 +15,7 @@ const SplashScreen = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-        <Text style={styles.title}>MGG</Text>
+        <Text style={TEXT_STYLES.title}>MGG</Text>
     </View>
   );
 };
@@ -23,11 +25,8 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  title: {
-    fontSize: 55,
-    fontWeight: 'bold',
-  },
+    backgroundColor:COLORS.black
+  }
 });
 
 export default SplashScreen;
