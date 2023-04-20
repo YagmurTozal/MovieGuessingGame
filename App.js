@@ -19,7 +19,6 @@ export default function App() {
       <Stack.Navigator initialRouteName="Splash">
         <Stack.Screen name="Splash" component={SplashScreen} options={{ headerShown: false }} />
         <Stack.Screen name="WelcomeAbroad" component={WelcomeScreen} options={{ headerShown: false }} />
-
         <Stack.Screen name="AvatarSelection" component={AvatarSelectionScreen} options={{ headerShown: false }} />
         <Stack.Screen name="MainMenu" component={MainMenuScreen} options={{ headerShown: false }} />
         {/* <Stack.Screen name="CreateRoom" component={CreateRoomScreen} options={{ headerShown: false }} />

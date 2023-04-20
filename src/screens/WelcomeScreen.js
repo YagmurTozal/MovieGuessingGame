@@ -12,7 +12,7 @@ const WelcomeScreen = ({ navigation }) => {
             <Image style={styles.image} source={require('../assets/images/smile.png')} />
 
             <Button
-                onPress={() => navigation.navigate('AvatarSelection')}
+                onPress={() =>   navigation.navigate('AvatarSelection')}
                 title="START"
                 accessibilityLabel="Learn more about this purple button"
             />
